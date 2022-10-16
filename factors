@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 from sys import argv
-from math import sqrt
 
 
 def open_nd_read_file(file_name):
@@ -19,7 +18,7 @@ def find_nd_times(n):
     """factor each
     given number n
     """
-    for p in range(2, n):
+    for p in range(2, n + 1):
         if(n % p == 0):
             print("{}={}*{}".format(n, (n/p), p))
             break
